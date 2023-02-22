@@ -1,0 +1,68 @@
+section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-center{
+    width: 90vw;
+    max-width: 1120px;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero {
+  padding: 1em;
+  display: grid;
+  place-items: center;
+}
+.welcome {
+    text-align: center;
+  color: #fd346e;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  
+}
+.hero-title{
+    text-align: center;
+    margin: 1.1rem 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: -2.25px;
+    line-height: 82px;
+    font-size: 5rem;
+}
+.hero-intro{
+    text-align: center;
+    font-weight:400;
+}
+.hero-buttons{
+    margin:1.0rem 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:1em;
+    
+
+}
+.hero-video{
+    background: #FD346E;
+    padding: 1em 1.5em;
+    border:none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    color: aliceblue;
+
+
+}
+.hero-started{
+    background: #FCDC00;
+    padding: 1em 1.5em;
+    border:none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    color: rgb(26, 22, 22);
+}
