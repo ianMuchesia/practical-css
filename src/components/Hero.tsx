@@ -15,8 +15,8 @@ const Hero = () => {
                 I am a Full Stack Software Developer with a passion for learning new technologies, and a passion for learning new technologies.
             </p>
             <div className='hero-buttons'>
-                <button className='hero-video'>Watch Video</button>
-                <button className='hero-started'>Get Started</button>
+                <button className='btn hero-video'>Watch Video</button>
+                <button className='btn hero-started'>Get Started</button>
             </div>
         </div>
         <div className="hero-image-section">

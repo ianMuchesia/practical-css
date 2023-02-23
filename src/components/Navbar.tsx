@@ -11,10 +11,15 @@ const Navbar = () => {
 
         </div>
         <ul className='nav-links'>
+          {/* checkbox hack */}
+          <input type="checkbox" id="checkbox_toggle" />
+          <label htmlFor="checkbox_toggle" className='toggler'>&#9776;</label>
+          <div className='menu'>
           <li className='nav-link'>Home</li>
           <li className='nav-link'>About</li>
           <li className='nav-link'>Portfolio</li>
           <li className='nav-link'><button>Contact</button></li>
+          </div>
         </ul>
       </div>
     
