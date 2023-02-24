@@ -1,98 +1,123 @@
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
 }
-.navbar-center{
-    width: 90vw;
-    max-width: 90%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-center {
+  width: 90vw;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar-header{
-    display: block;
+.navbar-header {
+  display: block;
 }
-.navbar-header img{
-    width: 4em;
+.navbar-header img {
+  width: 4em;
 }
-.menu{
-    display: flex;
-    gap:3em;
-    align-items: center;
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3em;
+  align-items: center;
 }
-input[type=checkbox]{
-    display: none;
+input[type="checkbox"] {
+  display: none;
 }
-.toggler{
-    display: none;
-    font-size: 2rem;
-    padding: 0.1em;
-    user-select: none;
-    border: 3px solid black;
-    border-radius: 6px;
+.toggler {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 0.18em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border: 2px solid black;
+  border-radius: 6px;
 }
-.nav-link{
-    font-size: 1.3em;
-    font-weight: bold;
-   
-     padding:5px 7.9px;
-    border-radius: 4em;
-    background: transparent;
-    cursor: pointer;
-}
-.nav-link:hover{
-    background: #624dbd;
-   
-    border-radius: 2px;
-    color:antiquewhite;
-    transition: 0.3s ease;
-}
-.nav-link button{
+.nav-link {
+  font-size: 1.3em;
+  font-weight: bold;
  
- background: #fff; 
- padding:0.6em 1.2em;
- border: 2px solid #624dbd;
- color:black;
- font-size: 1rem; 
+  padding: 5px 7.9px;
+  border-radius: 4em;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-link:hover {
+  background: #624dbd;
+   
   border-radius: 2px;
-
-
+  color: antiquewhite;
+  transition: 0.3s ease;
 }
-.nav-link button:hover{
-    background: #624dbd;
-     
-     color: white;
+.nav-link button {
+  background: #fff;
+  padding: 0.6em 1.2em;
+  border: 2px solid #624dbd;
+  color: black;
+  font-size: 1rem;
+  border-radius: 2px;
 }
-@media screen and (max-width:768px) {
-    .menu{
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        left:0;
-        width: 80%;
-        top:0;
-        right: 0;
-        text-align: center;
-        padding:1rem 0;
+.nav-link button:hover {
+  background: #624dbd;
 
+  color: white;
+}
 
-    }
-    .menu li:hover {
-        display: inline block;
-        background-color: #624dbd;
-        color: #fff;
-        transition: 0.4s ease-in-out;
-    }
-    .menu li+li{
-        margin-top: 0.88rem;
-    }
-    input[type=checkbox]:checked ~ .menu{
-        display: block;
-    }
-    .toggler{
-        display: block;
-    }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 90%;
+    min-height: 300px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem 0;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+   
+  }
+  .menu li{
+    margin: 0% 30%;
+  
+  }
+  .menu li:hover {
+    display: inline block;
+    background-color: #624dbd;
+    color: #fff;
+   
+    transition: 0.4s ease-in-out;
+  }
+ 
+  .menu li + li {
+    margin-top: 0.88rem;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .toggler {
+    display: block;
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50%{
+    opacity: 0.5;
     
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(90px);
+    
+  }
 }
