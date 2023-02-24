@@ -19,9 +19,11 @@ html{
 }
 body{
   font-family: Quicksand , sans-serif;
+  
 }
 main{
   min-height: calc(100vh - (6rem + 4rem));
+  
 }
 li{
   list-style: none;

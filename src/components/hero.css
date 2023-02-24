@@ -2,11 +2,16 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
 }
 .hero {
-  padding: 1em;
-  display: grid;
-  place-items: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
 }
 .welcome {
   text-align: center;
@@ -30,17 +35,120 @@
 .hero-buttons {
   margin: 1rem 0.8rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
 .hero-video {
   background: #fd346e;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   color: aliceblue;
 }
 .hero-started {
   background: #fcdc00;
   font-size: 1.3rem;
   color: rgb(26, 22, 22);
+}
+.hero-image-section{
+  position: relative;
+  top:0px;
+  right: 0px;
+
+}
+/* .hero-image{
+  height: auto;
+  max-width: 100%;
+} */
+.card1{
+  position: absolute;
+  height: 10em;
+  width:15em;
+  top: 1rem;
+  left: -4rem;
+  animation-name: card_1;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.card2{
+  position: absolute;
+  height: 12em;
+  width:12em;
+  bottom: 0%;
+  right: -3rem;
+  animation: card_2 1.5s normal linear forwards;
+
+}
+.card3{
+  position: absolute;
+  display:none;
+  height: 200px;
+  width:300px;
+  top: 6rem;
+  left: 0%;
+
+
+}
+.card4{
+  position: absolute;
+  height: 150px;
+  width:200px;
+  bottom: 0%;
+  left: -2rem;
+  display: none;
+  
+
+}
+.card5{
+  position:absolute;
+  height: 8rem;
+  width: 15rem;
+  top:50%;
+  left: -3rem;
+  animation: card_1 1.5s normal linear forwards;
+}
+.card6{
+  position: absolute;
+  
+  top: 0px;
+  right: 0px;
+  animation: card_6 1.5s normal linear forwards;
+
+}
+@keyframes card_1 {
+  from{
+    transform: translateX(-2rem);
+
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes card_2 {
+  from{
+    transform: translateX(2rem);
+
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes card_6 {
+  from{
+    transform: translateY(-2rem);
+
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width:768px) {
+  .hero-section{
+    flex-direction: column;
+  }
+
+  
 }
